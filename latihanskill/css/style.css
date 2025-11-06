@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(70, 96, 241);
+    display: flex;
+    flex-direction: column;
+}
+.html,body{
+    height: 100px;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.header{
+    background-image: linear-gradient(to right, rgb(3, 211, 248),rgb(40, 61, 250));
+    padding: 20px;
+    
+    color: white;
+}
+.menu{
+    background-image: linear-gradient(to right,rgb(48, 102, 252),rgb(16, 39, 248));
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.menu ul{
+    list-style: none;
+    margin-left: -50px;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+.menu ul li{
+    display: inline;
+    margin-right: 50px;
+    padding: 40px;
+}
+.menu ul li  :hover{
+    background-color: rgb(5, 248, 248);
+}
+.row{
+
+    width: 100%;
+    margin-top: 10px;
+}
+.banner{
+    /* border: solid 3px rgb(37, 112, 253); */
+    /* height ukuran kotakny */
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 500px;
+
+}
+.images-banner{
+    width: 100%;
+    height: 100%;
+}
+.best-seller{
+    margin-top: 10px;
+}
+.product{
+    margin-top: 50px;
+    /* biar ke bawah flex */
+    /* display: flex; */
+    /* jaral antar kotak */
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+    display: grid;
+    /* kalau autonya tiga jadi ada tiga foto */
+    grid-template-columns: auto auto auto;
+    /* gap jarak ke bawah */
+    gap: 10px;
+}
+.product-item{
+    /* width ukuran ke samping */
+    width: 100%;
+    /* height ukuran atas */
+    height: 200px;
+    /* border: solid blue; */
+    /* radius biar tidak lancip */
+    border-radius: 14px;
+    /* yang pertama untuk bayangan ke bwh,trus ke smping,blurnya,jarkanya */
+    box-shadow: 0px 0px 2px 1px rgb(50, 235, 204);
+
+}
+.Nama-product{
+    background-color: rgb(66, 46, 247);
+    width: 100%;
+    height: 17%;
+    text-align: center;
+    margin-top: -5px;
+    color: rgb(2, 2, 65);
+    border-radius: 0px 0px 10px 10px;
+    /* di bawah ini fungsinya biar tulisannya d tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.images-product{
+    width: 100%;
+    /* height ukuran ke ats */
+    height: 168px;
+    border-radius: 10px 10px 0px 0px;
+}
+.product-item:hover{
+    transform: scale(1.1);
+    transition: 0.3s; 
+}
+.footer{
+    background-color: rgb(165, 250, 250);
+    color: rgb(5, 240, 189);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    border-top: solid rgb(1, 75, 117) ;
+}
+.detail-product{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.detail-product .img-product{
+    width: 100px;
+    height: 100px;
+}
+.detail-product .diskripsip{
+    text-align: justify;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.hamburger .line{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+#menu-toggle{
+    display: none;
+}
+@media screen and (max-width: 430px) {
+    .hamburger{
+        display: flex;
+    }
+    .menu ul{
+        display: none;
+        flex-direction: column;
+    }
+    .product{
+        grid-template-columns: auto auto;
+    }
+    .detail-product{
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu-toggle:checked + .hamburger + ul{
+        display: flex;
+    }
+}

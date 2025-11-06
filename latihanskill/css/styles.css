@@ -1,0 +1,243 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.html,body{
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin: 10px;
+    text-align: center;
+}
+
+
+.menu{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    background-color: rgb(29, 3, 109);
+    padding: 15px 60;
+    color: white;  
+}
+.menu h1{
+    color: white;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.menu ul{
+    list-style: none;
+    margin-left: -40px;
+}
+.menu ul li {
+    margin-right: 20px;
+    display: inline;
+    padding: 10px;
+    color: white;
+}
+header{
+    background-color: rgb(79, 106, 194);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nama{
+    color: rgb(241, 243, 242);
+  
+}
+.nama span{
+    display: flex;
+}
+
+.nama span hr{
+    font-weight: bold;
+    width: 100px;
+}
+.nm{
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gambar{
+    /* width: 1920px; */
+    /* height: 210px;  */
+    border-radius: 20px;
+    display: grid;
+    /* di bawah ini biar memaksimalkan foto ke samping */
+    grid-template-columns: auto auto auto;
+    /* gap jarak */
+    gap: 40px;
+    justify-content: center;
+    
+
+}
+
+
+
+
+
+.gambar img{
+    width: 200px;
+    height: 200px;
+    /* margin: 10px; */
+    border-radius: 20px;
+}
+.about {
+    background-color: rgb(0, 0, 141);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+.isi-about{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    text-align:  left;
+}
+.isi-about p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.garis-about {
+    width: 15%;
+    height: 2px;
+    background: white;
+    margin: 10px auto;
+}
+
+.contact-me {
+    padding: 60px;
+    text-align: center;
+}
+
+.contact-me h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.garis-contact-me {
+    width: 15%;
+    height: 2px;
+    background: white;
+    margin: 10px auto;
+    margin-top: -30px;
+}
+
+.kumpulan-contact-me {
+    margin-top: -6px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    text-align: left;
+}
+
+.kumpulan-contact-me .line {
+    margin-top: -10px;
+    width: 150px;
+    height: 2px;
+    background-color: black;
+}
+
+.contact-me .kumpulan-contact-me {
+    width: 65%;
+    border: none;
+    margin-top: 20px;
+}
+
+.kumpulan-contact-me textarea {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 220, 0);
+    outline: none;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border-bottom: 0.5px solid black;
+    resize: none;
+}
+
+.kumpulan-contact-me input {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(208, 99, 117, 0);
+    outline: none;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-bottom: 0.5px solid black;
+}
+
+.kumpulan-contact-me button {
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(143, 160, 247);
+    border: none;
+}
+
+.penutup {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(138, 158, 240);
+    padding: 100px;
+}
+
+.con {
+    display: flex;
+    background-color: rgb(138, 158, 240);;
+}
+
+.location {
+  margin: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+.about-freelancer {
+    margin: 10px;
+    text-align: center;
+    font-size: medium;
+}
+
+.footer {
+    background-color: rgb(79, 106, 194);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 800px) {
+.portfolio-img{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.profil {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contactme {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+}
